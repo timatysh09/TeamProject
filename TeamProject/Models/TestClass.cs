@@ -12,4 +12,6 @@ public class TestClass
     public string Name { get; set; }
 
     public string LastName { get; set; }
+
+    public string FullName => $"{Name} {LastName}";
 }
