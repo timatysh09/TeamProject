@@ -14,4 +14,6 @@ public class TestClass
     public string LastName { get; set; }
 
     public string FullName => $"{Name} {LastName}";
+
+    public string Description { get; set; }
 }
