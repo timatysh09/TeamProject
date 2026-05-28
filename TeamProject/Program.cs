@@ -13,3 +13,6 @@ Console.WriteLine("Somyk Yurii");
 
 IProjectPart projectPart = new CurrentDateTimeProjectPart();
 projectPart.Execute();
+
+IProjectPart losProjectPart = new LosClass();
+losProjectPart.Execute();
