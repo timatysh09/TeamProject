@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TeamProject.Models
+﻿namespace TeamProject.Models
 {
     internal class Tyshchyk
     {
-        public int ammo { get; set; }
-        public int life { get; set; }
-        public int score { get; set; }
-        public string name { get; set; }
+        public int Ammo { get; set; }
+        public int Life { get; set; }
+        public int Score { get; set; }
+        public string Name { get; set; } = string.Empty;
     }
 }

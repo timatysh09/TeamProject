@@ -1,4 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using TeamProject.Interfaces;
+using TeamProject.Models;
+
 Console.WriteLine("Tymofii Tyschyk");
 Console.WriteLine("Pavlo Los");
 Console.WriteLine("Artem Bondar");
@@ -9,3 +11,5 @@ Console.WriteLine("Kalinichenko Vlad");
 Console.WriteLine("Tkach Oleksii");
 Console.WriteLine("Somyk Yurii");
 
+IProjectPart projectPart = new CurrentDateTimeProjectPart();
+projectPart.Execute();
