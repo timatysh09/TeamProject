@@ -23,3 +23,5 @@ IProjectPart bondar = new Bondar();
 bondar.Execute();
 kachur kachur = new kachur();
 kachur.Execute();
+IProjectPart projectPart1 = new Tyshchyk();
+projectPart1.Execute();
