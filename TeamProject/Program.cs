@@ -8,6 +8,7 @@ Console.WriteLine("Vasyl Kovalov"); // Teacher
 Console.WriteLine("Uperenko Olexander");
 Console.WriteLine("Tkach Oleksii");
 Console.WriteLine("Kalinichenko Vlad");
+Console.WriteLine("Tkach Oleksii");
 Console.WriteLine("Somyk Yurii");
 Console.WriteLine("Ilya Kachur");
 
