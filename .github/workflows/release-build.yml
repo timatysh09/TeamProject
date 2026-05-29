@@ -1,0 +1,73 @@
+name: Release Build
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-publish:
+    name: Build and publish release artifact
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9.0.x'
+
+      - name: Restore dependencies
+        run: dotnet restore TeamProject.slnx
+
+      - name: Build solution in Release
+        run: dotnet build TeamProject.slnx --configuration Release --no-restore
+
+      - name: Publish application
+        run: dotnet publish TeamProject/TeamProject.csproj --configuration Release --no-build --output ./artifacts/publish
+
+      - name: Create release archive
+        shell: bash
+        run: |
+          mkdir -p ./artifacts/release
+          archive_name="TeamProject-${GITHUB_REF_NAME//\//-}-net9.0.zip"
+          cd ./artifacts/publish
+          zip -r ../release/"$archive_name" .
+
+      - name: Upload published artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: teamproject-net9-release
+          path: ./artifacts/publish
+          if-no-files-found: error
+
+      - name: Create GitHub Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          tag_name="${{ github.ref_name }}"
+          asset_path="./artifacts/release/TeamProject-${tag_name}-net9.0.zip"
+
+          if ! gh release view "$tag_name" >/dev/null 2>&1; then
+            gh release create "$tag_name" --verify-tag --generate-notes
+          fi
+
+          gh release upload "$tag_name" "$asset_path" --clobber
+
+      - name: Upload release archive as workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: teamproject-net9-release-zip
+          path: ./artifacts/release/*.zip
+          if-no-files-found: error
+
