@@ -26,3 +26,7 @@ kachur.Execute();
 
 IProjectPart losProjectPart = new LosClass();
 losProjectPart.Execute();
+
+IProjectPart projectPart1 = new Tyshchyk();
+projectPart1.Execute();
+
