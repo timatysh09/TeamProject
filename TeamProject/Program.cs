@@ -1,4 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
+using TeamProject.Interfaces;
+using TeamProject.Models;
+
 Console.WriteLine("Tymofii Tyschyk");
 Console.WriteLine("Pavlo Los");
 Console.WriteLine("Artem Bondar");
@@ -8,4 +10,21 @@ Console.WriteLine("Tkach Oleksii");
 Console.WriteLine("Kalinichenko Vlad");
 Console.WriteLine("Tkach Oleksii");
 Console.WriteLine("Somyk Yurii");
+Console.WriteLine("Ilya Kachur");
 
+var parts = new List<IProjectPart>
+{
+    new CurrentDateTimeProjectPart(),
+    new KovalovProjectPart(),
+    new MyInfoProjectPart(),
+    new Tyshchyk(),
+    new LosClass(),
+    new Bondar(),
+    new Kalinichenko(),
+    new kachur(),
+};
+
+foreach (var part in parts)
+{
+    part.Execute();
+}
