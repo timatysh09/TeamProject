@@ -13,3 +13,6 @@ Console.WriteLine("Somyk Yurii");
 
 IProjectPart projectPart = new CurrentDateTimeProjectPart();
 projectPart.Execute();
+
+var kovalovPart = new KovalovProjectPart();
+kovalovPart.Execute();
