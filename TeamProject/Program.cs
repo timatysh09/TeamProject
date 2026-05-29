@@ -26,25 +26,11 @@ Console.WriteLine($"--------------------------------------");
 IProjectPart kalinichenkoPart = new Kalinichenko();
 kalinichenkoPart.Execute();
 Console.WriteLine($"--------------------------------------");
-IProjectPart kalinichenkoPart = new Kalinichenko();
-kalinichenkoPart.Execute();
-
-IProjectPart bondar = new Bondar();
-bondar.Execute();
-
 kachur kachur = new kachur();
 kachur.Execute();
 Console.WriteLine($"--------------------------------------");
 IProjectPart bondar = new Bondar();
 bondar.Execute();
 Console.WriteLine($"--------------------------------------");
-
-
-IProjectPart losProjectPart = new LosClass();
-losProjectPart.Execute();
-
-IProjectPart projectPart1 = new Tyshchyk();
-projectPart1.Execute();
-
 IProjectPart myInfoProjectPart = new MyInfoProjectPart();
 myInfoProjectPart.Execute();
