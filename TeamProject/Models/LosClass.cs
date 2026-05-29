@@ -1,8 +1,11 @@
+using TeamProject.Interfaces;
+
 namespace TeamProject.Models;
 
-public class LosClass
+public class LosClass : IProjectPart
 {
-    public int Id { get; set; }
-    public string Name { get; set; }
-    public string LastName { get; set; }
+    public void Execute()
+    {
+        Console.WriteLine("LOS (Line Of Sight) - Active");
+    }
 }

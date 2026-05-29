@@ -1,16 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using TeamProject.Interfaces;
 
 namespace TeamProject.Models
 {
-    internal class Tyshchyk
+    public class Tyshchyk : IProjectPart
     {
-        public int ammo { get; set; }
-        public int life { get; set; }
-        public int score { get; set; }
-        public string name { get; set; }
+        public void Execute()
+        {
+            Console.WriteLine($"My name is Tymofii and i`m 16 years old.");
+        }
     }
 }
+/*
+В командному проєкті
+
+взяти за основу гілку kovalov
+
+в директорія Models додати клас який реалізує TeamProject/Interfaces/IProjectPart.cs інтерфейс
+ 
+ваш клас повинен виводити в консоль повідомслення про вас, та що небудь ще.
+ 
+додати в Programs.cs виклик свого класу
+ */
