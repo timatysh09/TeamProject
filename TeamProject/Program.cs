@@ -14,6 +14,7 @@ Console.WriteLine("Ilya Kachur");
 var parts = new List<IProjectPart>
 {
     new CurrentDateTimeProjectPart(),
+    new KovalovProjectPart(),
     new MyInfoProjectPart(),
     new Tyshchyk(),
     new LosClass(),
