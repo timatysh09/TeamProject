@@ -17,3 +17,6 @@ projectPart.Execute();
 
 kachur kachur = new kachur();
 kachur.Execute();
+
+IProjectPart bondar = new Bondar();
+bondar.Execute();
