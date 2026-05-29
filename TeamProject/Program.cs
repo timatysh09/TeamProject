@@ -14,6 +14,9 @@ Console.WriteLine("Somyk Yurii");
 IProjectPart projectPart = new CurrentDateTimeProjectPart();
 projectPart.Execute();
 
+IProjectPart bondar = new Bondar();
+bondar.Execute();
+
 IProjectPart projectPart1 = new Tyshchyk();
 projectPart1.Execute();
 
