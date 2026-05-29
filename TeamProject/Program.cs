@@ -20,3 +20,6 @@ kachur.Execute();
 
 IProjectPart bondar = new Bondar();
 bondar.Execute();
+
+IProjectPart kalinichenkoPart = new Kalinichenko();
+kalinichenkoPart.Execute();
