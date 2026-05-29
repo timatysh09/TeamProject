@@ -23,3 +23,6 @@ bondar.Execute();
 
 kachur kachur = new kachur();
 kachur.Execute();
+
+IProjectPart losProjectPart = new LosClass();
+losProjectPart.Execute();
