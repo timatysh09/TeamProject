@@ -12,25 +12,19 @@ Console.WriteLine("Tkach Oleksii");
 Console.WriteLine("Somyk Yurii");
 Console.WriteLine("Ilya Kachur");
 
-IProjectPart projectPart = new CurrentDateTimeProjectPart();
-projectPart.Execute();
+var parts = new List<IProjectPart>
+{
+    new CurrentDateTimeProjectPart(),
+    new MyInfoProjectPart(),
+    new Tyshchyk(),
+    new LosClass(),
+    new Bondar(),
+    new Kalinichenko(),
+    new kachur(),
+};
 
 
-Console.WriteLine($"--------------------------------------");
-IProjectPart projectPart1 = new Tyshchyk();
-projectPart1.Execute();
-Console.WriteLine($"--------------------------------------");
-LosClass losProjectPart = new LosClass();
-losProjectPart.Execute();
-Console.WriteLine($"--------------------------------------");
-IProjectPart kalinichenkoPart = new Kalinichenko();
-kalinichenkoPart.Execute();
-Console.WriteLine($"--------------------------------------");
-kachur kachur = new kachur();
-kachur.Execute();
-Console.WriteLine($"--------------------------------------");
-IProjectPart bondar = new Bondar();
-bondar.Execute();
-Console.WriteLine($"--------------------------------------");
-IProjectPart myInfoProjectPart = new MyInfoProjectPart();
-myInfoProjectPart.Execute();
+foreach (var part in parts)
+{
+    part.Execute();
+}
