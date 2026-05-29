@@ -1,4 +1,4 @@
-﻿using TeamProject.Interfaces;
+using TeamProject.Interfaces;
 using TeamProject.Models;
 
 Console.WriteLine("Tymofii Tyschyk");
@@ -25,3 +25,5 @@ kachur kachur = new kachur();
 kachur.Execute();
 IProjectPart projectPart1 = new Tyshchyk();
 projectPart1.Execute();
+IProjectPart myInfoProjectPart = new MyInfoProjectPart();
+myInfoProjectPart.Execute();
