@@ -13,7 +13,9 @@
     <configurations />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fd75eef-92fa-4fb9-82a7-1662660ac6ec" name="Changes" comment="" />
+    <list default="true" id="6fd75eef-92fa-4fb9-82a7-1662660ac6ec" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/release-build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/release-build.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -128,23 +130,23 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.000006532198216" />
-      <entry key="S2" value="1.050555084279079" />
-      <entry key="S5" value="1.3031828544874642" />
-      <entry key="S10" value="1.5926355206742315" />
-      <entry key="S30" value="4.522499010028477" />
-      <entry key="S60" value="10.834554110445302" />
-      <entry key="M2" value="18.86241854275203" />
-      <entry key="M5" value="27.29489798524934" />
-      <entry key="M10" value="31.184285883213956" />
-      <entry key="M15" value="32.66540233632966" />
-      <entry key="M30" value="34.26351803787735" />
-      <entry key="H1" value="35.11289672932621" />
-      <entry key="H2" value="35.5515133110707" />
-      <entry key="H4" value="35.77449380862907" />
-      <entry key="D1" value="35.96223768972019" />
-      <entry key="W1" value="35.99460099259862" />
+      <entry key="MS100" value="1.0000000000041214" />
+      <entry key="MS500" value="1.0052845634025402" />
+      <entry key="S2" value="1.269620107923613" />
+      <entry key="S5" value="1.591971653778433" />
+      <entry key="S10" value="1.7693969416233746" />
+      <entry key="S30" value="1.9166583041109964" />
+      <entry key="S60" value="2.0500803883840986" />
+      <entry key="M2" value="3.7243680523670903" />
+      <entry key="M5" value="12.526866886580697" />
+      <entry key="M10" value="21.3698513412672" />
+      <entry key="M15" value="25.780832047550287" />
+      <entry key="M30" value="31.23522278046229" />
+      <entry key="H1" value="34.434331355072" />
+      <entry key="H2" value="36.16862350573696" />
+      <entry key="H4" value="37.07181588223836" />
+      <entry key="D1" value="37.843535535999116" />
+      <entry key="W1" value="37.977604238941694" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -166,23 +168,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9395227492140118" />
-      <entry key="MS500" value="0.98760718865138" />
-      <entry key="S2" value="1.0470393990606435" />
-      <entry key="S5" value="1.3009709904432845" />
-      <entry key="S10" value="1.591074262695607" />
-      <entry key="S30" value="4.515328652630542" />
-      <entry key="S60" value="10.815754094778429" />
-      <entry key="M2" value="18.83971392786306" />
-      <entry key="M5" value="27.27917265795052" />
-      <entry key="M10" value="31.17473928006303" />
-      <entry key="M15" value="32.658593943870926" />
-      <entry key="M30" value="34.25986922899609" />
-      <entry key="H1" value="35.11100625535928" />
-      <entry key="H2" value="35.55055087159287" />
-      <entry key="H4" value="35.77400819764145" />
-      <entry key="D1" value="35.96215613672057" />
-      <entry key="W1" value="35.9945893269342" />
+      <entry key="MS100" value="0.7269862586637431" />
+      <entry key="MS500" value="0.9433612532390657" />
+      <entry key="S2" value="1.251941727831664" />
+      <entry key="S5" value="1.5839759686212507" />
+      <entry key="S10" value="1.7651476707224467" />
+      <entry key="S30" value="1.9151721818037997" />
+      <entry key="S60" value="2.0491668911541887" />
+      <entry key="M2" value="3.721887734501452" />
+      <entry key="M5" value="12.520644978430367" />
+      <entry key="M10" value="21.363844072301365" />
+      <entry key="M15" value="25.775824059013814" />
+      <entry key="M30" value="31.232083888505457" />
+      <entry key="H1" value="34.43257235068977" />
+      <entry key="H2" value="36.167692140429075" />
+      <entry key="H4" value="37.07133663034088" />
+      <entry key="D1" value="37.84345372263382" />
+      <entry key="W1" value="37.97759250314347" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -273,7 +275,7 @@
       <updated>1779988418894</updated>
       <workItem from="1779988421373" duration="4227000" />
       <workItem from="1780068871709" duration="5596000" />
-      <workItem from="1780076836579" duration="396000" />
+      <workItem from="1780076836579" duration="757000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлен агент разработки C# для консольных приложений и файлы конфигурации проекта">
       <option name="closed" value="true" />
@@ -339,7 +341,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780076977653</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Update workflow to fix .NET project paths and add Windows-specific release build">
+      <option name="closed" value="true" />
+      <created>1780077402302</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1780077402302</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,7 +378,8 @@
     <MESSAGE value="Add KovalovProjectPart to project parts list" />
     <MESSAGE value="Add GitHub Actions workflow for release builds and artifact publishing" />
     <MESSAGE value="Add `.idea` project configuration files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add `.idea` project configuration files" />
+    <MESSAGE value="Update workflow to fix .NET project paths and add Windows-specific release build" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update workflow to fix .NET project paths and add Windows-specific release build" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
