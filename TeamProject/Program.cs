@@ -1,4 +1,4 @@
-﻿using TeamProject.Interfaces;
+using TeamProject.Interfaces;
 using TeamProject.Models;
 
 Console.WriteLine("Tymofii Tyschyk");
@@ -15,18 +15,20 @@ Console.WriteLine("Ilya Kachur");
 IProjectPart projectPart = new CurrentDateTimeProjectPart();
 projectPart.Execute();
 
+
+Console.WriteLine($"--------------------------------------");
 IProjectPart projectPart1 = new Tyshchyk();
 projectPart1.Execute();
-
-
-IProjectPart losProjectPart = new LosClass();
+Console.WriteLine($"--------------------------------------");
+LosClass losProjectPart = new LosClass();
 losProjectPart.Execute();
-
+Console.WriteLine($"--------------------------------------");
 IProjectPart kalinichenkoPart = new Kalinichenko();
 kalinichenkoPart.Execute();
-
+Console.WriteLine($"--------------------------------------");
 kachur kachur = new kachur();
 kachur.Execute();
-
+Console.WriteLine($"--------------------------------------");
 IProjectPart bondar = new Bondar();
 bondar.Execute();
+Console.WriteLine($"--------------------------------------");
