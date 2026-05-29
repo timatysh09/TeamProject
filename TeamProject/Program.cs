@@ -10,6 +10,7 @@ Console.WriteLine("Tkach Oleksii");
 Console.WriteLine("Kalinichenko Vlad");
 Console.WriteLine("Tkach Oleksii");
 Console.WriteLine("Somyk Yurii");
+Console.WriteLine("Ilya Kachur");
 
 IProjectPart projectPart = new CurrentDateTimeProjectPart();
 projectPart.Execute();
@@ -19,3 +20,6 @@ kalinichenkoPart.Execute();
 
 IProjectPart bondar = new Bondar();
 bondar.Execute();
+
+kachur kachur = new kachur();
+kachur.Execute();
