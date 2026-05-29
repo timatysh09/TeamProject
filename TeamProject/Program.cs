@@ -15,6 +15,10 @@ Console.WriteLine("Ilya Kachur");
 IProjectPart projectPart = new CurrentDateTimeProjectPart();
 projectPart.Execute();
 
+IProjectPart projectPart1 = new Tyshchyk();
+projectPart1.Execute();
+
+
 IProjectPart losProjectPart = new LosClass();
 losProjectPart.Execute();
 
