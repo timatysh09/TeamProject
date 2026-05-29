@@ -19,6 +19,8 @@ IProjectPart losProjectPart = new LosClass();
 losProjectPart.Execute();
 IProjectPart kalinichenkoPart = new Kalinichenko();
 kalinichenkoPart.Execute();
+var kovalovPart = new KovalovProjectPart();
+kovalovPart.Execute();
 IProjectPart bondar = new Bondar();
 bondar.Execute();
 kachur kachur = new kachur();
